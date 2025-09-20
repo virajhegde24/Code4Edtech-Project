@@ -1,9 +1,10 @@
+import os
 import streamlit as st
 import requests
 import json
 
 # --- Configuration ---
-API_URL = "http://localhost:8090"
+API_URL = os.getenv('API_SERVER')
 st.set_page_config(layout="wide")
 
 
